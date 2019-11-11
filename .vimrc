@@ -16,15 +16,21 @@ colorscheme solarized
 " set numbering
 set number
 
+" show spaces
+" set list
+" set listchars=space:·
+
 " set clipboard support
 set clipboard=unnamed
 
-" auto indent
-set autoindent
-
-" identation on space
+filetype plugin indent on
+" show existing tab with 4 spaces width
+set tabstop=4
+" when indenting with '>', use 4 spaces width
 set shiftwidth=4
-set softtabstop=4
+" On pressing tab, insert 4 spaces
+" set noexpandtab
+set expandtab
 
 " autosave
 let g:auto_save=1
